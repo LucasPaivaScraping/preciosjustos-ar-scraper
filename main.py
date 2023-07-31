@@ -7,7 +7,7 @@ import time
 from lxml import html
 from playwright.sync_api import sync_playwright
 
-from src.scraper import scraper_multithreading
+from src.classes import scraper_multithreading, scraper_bot
 
 logger = logging.getLogger(__name__)
 logger.propagate = False
@@ -280,4 +280,5 @@ def main():
 
 if __name__ == "__main__":
     # main()
-    scraper_multithreading.run()
+    # scraper_multithreading.run()
+    scraper_bot.run_process()
